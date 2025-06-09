@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+    <div class="buttons">
+        <button class="button" onclick="cartquantity = cartquantity + 1;  document.querySelector('#cart-summary').innerText =
+         `your bag has ${cartquantity} items`;
+">add to bag</button>
+        <button class="button" onclick="alert('your item is added to your wishlist !')">wish list </button>
+        <button class="button"> about us </button>
+    </div>
+    <h1 id="cart-summary"> </h1>
+
+
+
+    <script>
+        let cartquantity = 0;
+        document.querySelector('#cart-summary').innerText = `your bag has ${cartquantity} items`;
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
